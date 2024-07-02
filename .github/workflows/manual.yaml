@@ -12,4 +12,4 @@ jobs:                                       # ジョブの定義
   run:                                      # ジョブID
     runs-on: ubuntu-latest                  # ランナー（Ubuntuで実行）
     steps:                                  # ステップの定義
-      - run: echo "${{ input.greeting }}"   # 入力パラメータ「greeting」の参照
+      - run: echo "${{ inputs.greeting }}"   # 入力パラメータ「greeting」の参照
